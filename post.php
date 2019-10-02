@@ -1,20 +1,8 @@
-<!Doctype php>
-<html>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <div id= "parent"> 
-    <div id="header"> 
-    <head>
-    <title>
-    Post 1
-    </title>
-    <h1>Blog CMS</h1>
-    <nav>
-            <a href="index.php">Home</a> |
-            <a href="post-submission.php">New Post</a> |
-      </nav> 
-    </head>
-    </div>
+<?php include "header.php"; 
+?>
   
+<html>
+
     <body>
         <main>
         <header> Blog Post 1</header>

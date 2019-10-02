@@ -1,20 +1,7 @@
-<!Doctype php>
-<?php>
-<link rel="stylesheet" type="text/css" href="styles.css" />
-<div id= "parent"> 
-<div id="header">  
-    <head>
-    <title>
-    Helllo World!
-    </title>
-   
-    <h1>Blog CMS</h1>
-    <nav>
-            <a href="index.php">Home</a> |
-            <a href="post-submission.php">New Post</a> |
-      </nav> 
-    </head>
-    </div>
+<?php include "header.php"; 
+?>
+<html>
+
 
     <body>
            <main>
@@ -29,5 +16,5 @@
         <p>Created by Rosa Genetti for IDESN 3535 2019</p>
     </footer> 
     </div>
-    </div>
- <?
+
+ </html>

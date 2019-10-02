@@ -1,9 +1,7 @@
-<?php include "header.php"; 
+<?php include "header.php";
 ?>
 <html>
-
-
-    <body>
+<body>
            <main>
                 <ul>
                     <li><a href= "Post.php">Blog Post 1</a></li>
@@ -11,10 +9,7 @@
            </main>
     </body>
 
-    <div id="footer">
-    <footer>
-        <p>Created by Rosa Genetti for IDESN 3535 2019</p>
-    </footer> 
-    </div>
+    <?php include "footer.php";
+    ?>
 
  </html>

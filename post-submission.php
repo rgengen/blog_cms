@@ -17,10 +17,7 @@
                   </form> 
     </main>
     </body>
-    <div id="footer">
-    <footer>
-        <p>Created by Rosa Genetti for IDESN 3535 2019</p>
-    </footer> 
-    </div>
+    <?php include "footer.php";
+    ?>
     </div>
  <html>

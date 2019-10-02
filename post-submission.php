@@ -1,5 +1,5 @@
-<!Doctype html>
-<html>
+<!Doctype php>
+<?php>
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <div id= "parent"> 
     <div id="header"> 
@@ -9,8 +9,8 @@
     </title>
     <h1>Blog CMS</h1>
     <nav>
-            <a href="index.html">Home</a> |
-            <a href="post-submission.html">New Post</a> |
+            <a href="index.php">Home</a> |
+            <a href="post-submission.php">New Post</a> |
       </nav> 
     </head>
     </div>
@@ -36,4 +36,4 @@
     </footer> 
     </div>
     </div>
- </html>
+ <?

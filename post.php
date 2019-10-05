@@ -2,7 +2,6 @@
 ?>
   
 <html>
-
     <body>
         <main>
         <header> Blog Post 1</header>

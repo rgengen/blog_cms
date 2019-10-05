@@ -1,5 +1,6 @@
 <?php include "header.php";
 ?>
+<link rel="stylesheet" type="text/css" href="styles.css" />
 <html>
 <body>
     <?php
@@ -11,12 +12,29 @@
         }
         ?>
            <main>
-                <ul>
+           <ul style="list-style-type:none;">
+           <style>
+               
+                
+                a:link, a:visited {
+  
+  color: black;
+  padding: 14px 25px;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  color: purple;}
+
+                </style>
+
                     <?php
                     $postTitles = getPostTitlesFromDatabase ();
 
                     foreach ($postTitles as $postTitle){
-                        echo "<li><a href='post.php?title='. $postTitle . "'>" . $postTitle . "</a></li>";
+                        echo "<li><a href='post.php?title='". $postTitle . "'>" . $postTitle . "</a></li>";
                     }
                     ?>
                  </ul>

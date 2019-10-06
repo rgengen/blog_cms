@@ -1,17 +1,11 @@
-<?php include "header.php";
+<?php include "header.php"; 
 ?>
 <link rel="stylesheet" type="text/css" href="styles.css" />
 <html>
 <body>
-    <?php
-        function getPostTitlesFromDatabase () {
-            //todo in module 4
-            //get this data from datbase instead of hardcoding it
-            $postTitles = array ("Blog Post 1", "Blog Post 2", "Blog Post 3");
-            return $postTitles;
-        }
-        ?>
+   
            <main>
+           
            <ul style="list-style-type:none;">
            <style>
                
@@ -29,16 +23,26 @@ a:hover, a:active {
   color: purple;}
 
                 </style>
+                </ul>
+                 <?php
+                 
+        function getPostTitlesFromDatabase () {
+            //get all post titles from posts table
+            include_once 'db_connect.php';
+            $sql = "SELECT title FROM posts;";
+            $result = mysqli_query ($conn, $sql);
 
-                    <?php
-                    $postTitles = getPostTitlesFromDatabase ();
+            //get each result row as an assoc array then add title to $postTitles
+            $postTitles = array ();
+            while ($row = mysqli_fetch_assoc ($result)){
+                array_push ($postTitles, $row ['title']);
+            }
+            return $postTitles;
+        }
+           ?>
 
-                    foreach ($postTitles as $postTitle){
-                        echo "<li><a href='post.php?title='". $postTitle . "'>" . $postTitle . "</a></li>";
-                    }
-                    ?>
-                 </ul>
-           </main>
+
+               </main>
     </body>
 
     <?php include "footer.php";

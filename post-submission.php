@@ -5,7 +5,7 @@
     <body>
         <main>
         <header> New Blog Post</header>
-              <form action="/action_page.php" method="get">
+              <form action="/submit-post.php" method="POST">
                     Title: <input type="text" name="title"><br>
                     Date: <input type="text" name="date"><br>
                     Author: <input type="text" name="author"><br>
